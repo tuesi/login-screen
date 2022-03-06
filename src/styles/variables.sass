@@ -1,0 +1,16 @@
+@mixin purpleGradient($lighten: 0%)
+    background-image: linear-gradient(lighten(#78517b, $lighten), lighten(#67466a, $lighten))
+
+@mixin useButton()
+    &:hover
+        @include purpleGradient($lighten: 5%)
+    &:active
+        @include purpleGradient($lighten: 10%)
+
+$font: "Helvetica Neue"
+$fontWeight: bold
+$fontSize: 15px
+$textShadow: 1px 1px #35103850
+$inputBackgroundColor: #f0eef0 
+
+    
